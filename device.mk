@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/vivo/2026
+LOCAL_PATH := device/vivo/2109
 
 # API & VNDK
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_TARGET_VNDK_VERSION := 30
 
 # Dynamic Partitions

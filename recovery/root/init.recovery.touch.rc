@@ -80,6 +80,8 @@ on boot
 	chown system /sys/class/vts/vivo_ts/frames/mutual_raw
 	chown system /sys/class/vts/vivo_ts/frames/self_delta
 	chown system /sys/class/vts/vivo_ts/frames/self_raw
+	chown system /sys/class/vts/vivo_ts/frames/mutual_self_raw
+	chown system /sys/class/vts/vivo_ts/frames/mutual_self_delta
 	chown system /sys/class/vts/vivo_ts/properties/dimension_x
 	chown system /sys/class/vts/vivo_ts/properties/dimension_y
 	chown system /sys/class/vts/vivo_ts/properties/ic
@@ -122,6 +124,8 @@ on boot
 	chown system /sys/class/vts/vivo_ts_second/frames/mutual_raw
 	chown system /sys/class/vts/vivo_ts_second/frames/self_delta
 	chown system /sys/class/vts/vivo_ts_second/frames/self_raw
+	chown system /sys/class/vts/vivo_ts_second/frames/mutual_self_raw
+	chown system /sys/class/vts/vivo_ts_second/frames/mutual_self_delta
 	chown system /sys/class/vts/vivo_ts_second/properties/dimension_x
 	chown system /sys/class/vts/vivo_ts_second/properties/dimension_y
 	chown system /sys/class/vts/vivo_ts_second/properties/ic
@@ -155,5 +159,5 @@ service touchupdate /system/bin/vts_app_recovery --update
 	class core
 	user system
 	disabled
-	seclabel u:r:recovery:s0
+	seclabel u:r:vts_app:s0
 	oneshot

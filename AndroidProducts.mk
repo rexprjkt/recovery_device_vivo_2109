@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_2026.mk
+    $(LOCAL_DIR)/twrp_2109.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_2026-eng
+    twrp_2109-eng
